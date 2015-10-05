@@ -1,7 +1,7 @@
 {
   "name": "uploadmgr",
   "version": "1.0.0",
-  "description": "UploadMgr is a qooxdoo contrib  : http://qooxdoo.org/contrib/project/uploadmgr",
+  "description": "UploadMgr is a qooxdoo contrib  : https://github.com/johnspackman/UploadMgr",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
