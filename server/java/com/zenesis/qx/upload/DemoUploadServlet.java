@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 
 import com.oreilly.servlet.multipart.FilePart;
 import com.oreilly.servlet.multipart.MultipartParser;
@@ -26,7 +26,7 @@ import com.oreilly.servlet.multipart.Part;
  */
 public class DemoUploadServlet extends HttpServlet {
 	
-	private static final Logger log = Logger.getLogger(DemoUploadServlet.class); 
+	private static final Logger log = org.apache.logging.log4j.LogManager.getLogger(DemoUploadServlet.class); 
 
     private static final long serialVersionUID = 1L;
     private File uploadFilesToDir;
