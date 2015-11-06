@@ -18,23 +18,23 @@
      for details.
 
    Authors:
-     * John Spackman (john.spackman@zenesis.com)
+ * John Spackman (john.spackman@zenesis.com)
 
-************************************************************************/
+ ************************************************************************/
 
 /**
  * Implementation of an UploadButton
  */
 qx.Class.define("com.zenesis.qx.upload.UploadMenuButton", {
-	extend: qx.ui.menu.Button,
-	include: [ com.zenesis.qx.upload.MUploadButton ],
-	
-	members: {
-		_onTap:function(evt){
-			var self = this;
-			setTimeout(function() {
-				self._onTap(evt);
-			}, 100);
-		}
-	}
+  extend: qx.ui.menu.Button,
+  include: [ com.zenesis.qx.upload.MUploadButton ],
+
+  members: {
+    _onTap: function(evt) {
+      var self = this;
+      setTimeout(function() {
+        self._onTap(evt);
+      }, 100);
+    }
+  }
 });

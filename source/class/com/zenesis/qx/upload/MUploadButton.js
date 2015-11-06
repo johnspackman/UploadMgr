@@ -18,27 +18,27 @@
      for details.
 
    Authors:
-     * John Spackman (john.spackman@zenesis.com)
+ * John Spackman (john.spackman@zenesis.com)
 
-************************************************************************/
+ ************************************************************************/
 
 /**
- * This mixin provides a trivial way to make any widget suitable as a widget
- * for Uploader - the only trick is that the capture and releaseCapture methods 
- * in qx.ui.core.Widget must not be fired.
+ * This mixin provides a trivial way to make any widget suitable as a widget for
+ * Uploader - the only trick is that the capture and releaseCapture methods in
+ * qx.ui.core.Widget must not be fired.
  */
 qx.Mixin.define("com.zenesis.qx.upload.MUploadButton", {
-	include: [ com.zenesis.qx.upload.MParameters ],
-	
-	members: {
-	    // overridden
-	    capture : function() {
-	    	// Nothing
-	    },
+  include: [ com.zenesis.qx.upload.MParameters ],
 
-	    // overridden
-	    releaseCapture : function() {
-	    	// Nothing
-	    }
-	}
+  members: {
+    // overridden
+    capture: function() {
+      // Nothing
+    },
+
+    // overridden
+    releaseCapture: function() {
+      // Nothing
+    }
+  }
 });

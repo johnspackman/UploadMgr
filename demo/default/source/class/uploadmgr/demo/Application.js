@@ -22,16 +22,13 @@
 
  ************************************************************************/
 
-/* ************************************************************************
-
- @asset(com/zenesis/qx/upload/*)
- @asset(qx/icon/Oxygen/22/actions/*)
-
- ************************************************************************ */
-
 /**
  * This is the main application class of your custom application
  * "com.zenesis.qx.upload"
+ * 
+ * @asset(uploadmgr/demo/*)
+ * @asset(com/zenesis/qx/upload/*)
+ * @asset(qx/icon/Oxygen/22/actions/*)
  */
 qx.Class.define("uploadmgr.demo.Application", {
   extend: qx.application.Standalone,
@@ -70,7 +67,7 @@ qx.Class.define("uploadmgr.demo.Application", {
       // Document is the application root
       var doc = this.getRoot();
 
-      var btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "com/zenesis/qx/upload/test.png");
+      var btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "uploadmgr/demo/test.png");
       var lst = new qx.ui.form.List();
       var uploadCount = 0;
 
@@ -198,10 +195,11 @@ qx.Class.define("uploadmgr.demo.Application", {
         left: 0,
         right: 0
       });
-      comp.setDecorator(new qx.ui.decoration.Background().set({
-        backgroundImage: "com/zenesis/qx/upload/banner-bg.png",
-        backgroundPositionX: 0
-      }));
+      /*
+       * comp.setDecorator(new qx.ui.decoration.Background().set({
+       * backgroundImage: "com/zenesis/qx/upload/banner-bg.png",
+       * backgroundPositionX: 0 }));
+       */
       doc.add(new qx.ui.basic.Label("<a href='http://www.zenesis.com' target='_blank'>http://www.zenesis.com</a>").set({
         rich: true,
         font: new qx.bom.Font(13, [ "Arial", "Lucida Grande" ])
@@ -244,23 +242,33 @@ qx.Class.define("uploadmgr.demo.Application", {
         top: 420
       });
 
-      btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "com/zenesis/qx/upload/test.png");
+      btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "uploadmgr/demo/test.png");
       uploader.addWidget(btn);
       doc.add(btn, {
         left: 100,
         top: 460
       });
-      btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "com/zenesis/qx/upload/test.png");
+      btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "uploadmgr/demo/test.png");
       uploader.addWidget(btn);
       doc.add(btn, {
         left: 250,
         top: 460
       });
-      btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "com/zenesis/qx/upload/test.png");
-      uploader.addWidget(btn);
-      doc.add(btn, {
+      var btnDisabled = new com.zenesis.qx.upload.UploadButton("Add File(s)", "uploadmgr/demo/test.png").set({
+        enabled: false
+      });
+      uploader.addWidget(btnDisabled);
+      doc.add(btnDisabled, {
         left: 400,
         top: 460
+      });
+      var cbxDisabled = new qx.ui.form.CheckBox("Enable/Disable");
+      cbxDisabled.addListener("changeValue", function(evt) {
+        btnDisabled.setEnabled(evt.getData());
+      });
+      doc.add(cbxDisabled, {
+        left: 400,
+        top: 440
       });
 
       var tb = new qx.ui.toolbar.ToolBar();
@@ -280,14 +288,14 @@ qx.Class.define("uploadmgr.demo.Application", {
       // Menu button
       var menuTop = new qx.ui.toolbar.MenuButton("Menu");
       var menu = new qx.ui.menu.Menu;
-      var mni = new com.zenesis.qx.upload.UploadMenuButton("Add File(s)", "com/zenesis/qx/upload/test.png");
+      var mni = new com.zenesis.qx.upload.UploadMenuButton("Add File(s)", "uploadmgr/demo/test.png");
 
       menu.add(mni);
       menuTop.setMenu(menu);
       part.add(menuTop);
       uploader.addWidget(mni);
 
-      btn = new com.zenesis.qx.upload.UploadToolbarButton("Add File(s)", "com/zenesis/qx/upload/test.png");
+      btn = new com.zenesis.qx.upload.UploadToolbarButton("Add File(s)", "uploadmgr/demo/test.png");
       uploader.addWidget(btn);
       part.add(btn);
 

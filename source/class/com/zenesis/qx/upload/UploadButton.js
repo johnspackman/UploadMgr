@@ -18,18 +18,18 @@
      for details.
 
    Authors:
-     * John Spackman (john.spackman@zenesis.com)
+ * John Spackman (john.spackman@zenesis.com)
 
-************************************************************************/
+ ************************************************************************/
 
 /**
  * Implementation of an UploadButton
  */
 qx.Class.define("com.zenesis.qx.upload.UploadButton", {
-	extend: qx.ui.form.Button,
-	include: [ com.zenesis.qx.upload.MUploadButton ],
-	
-	members: {
-		
-	}
+  extend: qx.ui.form.Button,
+  include: [ com.zenesis.qx.upload.MUploadButton ],
+
+  members: {
+
+  }
 });

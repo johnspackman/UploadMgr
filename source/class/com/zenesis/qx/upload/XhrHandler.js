@@ -50,7 +50,7 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
         this.debug("No files found to upload via XhrHandler");
 
       var files = [];
-      for ( var i = 0; i < bomFiles.length; i++) {
+      for (var i = 0; i < bomFiles.length; i++) {
         var bomFile = bomFiles[i];
         var id = "upload-" + this._getUniqueFileId(),
         // fix missing name in Safari 4
@@ -75,7 +75,7 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
       var xhr = new XMLHttpRequest();
       if (com.zenesis.qx.upload.XhrHandler.isWithCredentials())
         xhr.withCredentials = true;
-      
+
       var self = this;
 
       file.setUserData("com.zenesis.qx.upload.XhrHandler", xhr);
