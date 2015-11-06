@@ -140,7 +140,8 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
 					data.appearId = null;
 					var container = widget.getContentElement();
 					container.setStyle("overflow", "hidden");
-					container.addAt(this._createInputElement(widget), 0);
+					if (widget.getEnabled() && !data.inputElement)
+					  container.addAt(this._createInputElement(widget), 0);
 					this.__fixupSize(widget);
 				}
 			}, this);
@@ -160,6 +161,14 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
 			this.__widgetsData[widget.toHashCode()] = { appearId: appearId, keydownId: keydownId, widget: widget, inputElement: null };
 			widget.addListener("resize", function(evt) {
 				this.__fixupSize(widget);
+			}, this);
+			widget.addListener("changeEnabled", function(evt) {
+			  if (evt.getData()) {
+	        var container = widget.getContentElement();
+          container.addAt(this._createInputElement(widget), 0);
+			  } else {
+			    this._removeInputElement(widget);
+			  }
 			}, this);
 		},
 		
@@ -244,28 +253,36 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
 		 * @returns
 		 */
 		_createInputElement: function(widget) {
-			var data = this.__widgetsData[widget.toHashCode()],
-				name = this.getInputNamePrefix() + '-' + (++this.__inputSerial);
+			var data = this.__widgetsData[widget.toHashCode()];
+			var name = this.getInputNamePrefix() + '-' + (++this.__inputSerial);
 			qx.core.Assert.assertNull(data.inputElement);
 			var elem = data.inputElement = new com.zenesis.qx.upload.InputElement(widget, this.getMultiple(), name);
-	        elem.addListenerOnce("change", qx.lang.Function.bind(this._onInputChange, this, elem));
+	    elem.addListenerOnce("change", qx.lang.Function.bind(this._onInputChange, this, elem));
 	
-	        return elem;
+	    return elem;
 		},
 		
-		/**
-		 * Resets the input element - ie discards the current one (which presumably has already
-		 * been queued for uploading) and creates a new one 
-		 */
-		_resetInputElement: function(widget) {
-			var data = this.__widgetsData[widget.toHashCode()],
-				elem = data.inputElement,
-				container = widget.getContentElement();
-			data.inputElement = null;
-			container.remove(elem);
-			container.addAt(this._createInputElement(widget), 0);
-		},
-		
+    /**
+     * Removes the input element - ie discards the current one (which presumably has already
+     * been queued for uploading) 
+     */
+    _removeInputElement: function(widget) {
+      var data = this.__widgetsData[widget.toHashCode()];
+      var elem = data.inputElement;
+      var container = widget.getContentElement();
+      data.inputElement = null;
+      container.remove(elem);
+    },
+    
+    /**
+     * Resets the input element - ie discards the current one (which presumably has already
+     * been queued for uploading) and creates a new one 
+     */
+    _resetInputElement: function(widget) {
+      this._removeInputElement(widget);
+      container.addAt(this._createInputElement(widget), 0);
+    },
+    
 		/**
 		 * Callback for changes to the input[ty=file]'s value, ie this is called when the user
 		 * has selected a file to upload
