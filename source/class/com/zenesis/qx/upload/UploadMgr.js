@@ -299,6 +299,7 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
      */
     _resetInputElement: function(widget) {
       this._removeInputElement(widget);
+      var container = widget.getContentElement();
       container.addAt(this._createInputElement(widget), 0);
     },
 
