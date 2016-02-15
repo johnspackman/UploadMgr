@@ -72,6 +72,17 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
      * @Override
      */
     _doUpload: function(file) {
+      function sendAsMime(binaryData) {
+        body += binaryData + "\r\n";
+        body += "--" + boundary + "--";
+
+        xhr.open("POST", action, true);
+        xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+        xhr.setRequestHeader("X-File-Name", encodeURIComponent(file.getFilename()));
+        xhr.setRequestHeader("Content-Type", "multipart/form-data; boundary=" + boundary);
+        xhr.send(body);
+      }
+
       var xhr = new XMLHttpRequest();
       if (com.zenesis.qx.upload.XhrHandler.isWithCredentials())
         xhr.withCredentials = true;
@@ -126,16 +137,6 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
         body += "Content-Disposition: form-data; name=\"file\"; filename=\"" + file.getFilename() + "\"\r\n";
         body += "Content-Type: " + (browserFile.type || "application/octet-stream") + "\r\n\r\n";
 
-        function sendAsMime(binaryData) {
-          body += binaryData + "\r\n";
-          body += "--" + boundary + "--";
-
-          xhr.open("POST", action, true);
-          xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-          xhr.setRequestHeader("X-File-Name", encodeURIComponent(file.getFilename()));
-          xhr.setRequestHeader("Content-Type", "multipart/form-data; boundary=" + boundary);
-          xhr.send(body);
-        }
         if (typeof browserFile.getAsBinary == "function") {
           sendAsMime(browserFile.getAsBinary());
         } else {
