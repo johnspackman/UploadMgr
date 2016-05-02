@@ -57,7 +57,7 @@ qx.Class.define("com.zenesis.qx.upload.FileApiHandler", {
       this.__uploadQueue.forEach(function(file) {
         var uploader = this.__uploader;
         var reader = new qx.bom.FileReader();
-	reader.addListenerOnce("load", function(event) {
+        reader.addListenerOnce("load", function(event) {
           uploader.fireDataEvent("completeRead", e.getData().content);
         });
         reader.readAsText(file);
