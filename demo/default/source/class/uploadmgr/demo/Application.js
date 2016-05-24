@@ -77,7 +77,7 @@ qx.Class.define("uploadmgr.demo.Application", {
       // to (i.e. it's the value used
       // for the form's action attribute)
       //
-      var uploader = new com.zenesis.qx.upload.UploadMgr(btn, "http://www.zenesis.com/demoupload"); // "http://my.grasshopperwebsites.com:8080/demoupload"
+      var uploader = new com.zenesis.qx.upload.UploadMgr(btn, "http://localhost:8080/demoupload"); // "http://my.grasshopperwebsites.com:8080/demoupload"
 
       // Parameter tp be added to all uploads (can be overridden by
       // individual files)
