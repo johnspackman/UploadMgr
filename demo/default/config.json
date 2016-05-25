@@ -37,8 +37,7 @@
   "let" :
   {
     "APPLICATION"  : "uploadmgr.demo",
-    "QOOXDOO_PATH" : "../../../../../../../../Local/WebContent/public/grasshopper/qooxdoo-trunk",
-    "XXQOOXDOO_PATH" : "../../../../../../../../../../../os/qooxdoo",
+    "QOOXDOO_PATH" : "../../../qooxdoo",
     "QXTHEME"      : "uploadmgr.demo.theme.Theme",
     "API_EXCLUDE"  : ["qx.test.*", "${APPLICATION}.theme.*", "${APPLICATION}.test.*", "${APPLICATION}.simulation.*"],
     "LOCALES"      : [ "en" ],
@@ -55,10 +54,18 @@
   {
     "libraries" : 
     {
-      "library" :
+      "=library" :
       [
         {
-          "manifest" : "../../Manifest.json"
+          "manifest": "./Manifest.json"
+        },
+        {
+          "manifest": "${QOOXDOO_PATH}/framework/Manifest.json",
+          "uri": "/qooxdoo"
+        },
+        {
+          "manifest" : "../../Manifest.json",
+          "uri": "/uploadmgr"
         }
         
       ]
