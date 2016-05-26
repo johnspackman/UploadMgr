@@ -248,7 +248,8 @@ qx.Class.define("uploadmgr.demo.Application", {
         left: 100,
         top: 460
       });
-      btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "uploadmgr/demo/test.png");
+      btn = new com.zenesis.qx.upload.UploadButton("Add Image or *.mp4 File(s)", "uploadmgr/demo/test.png");
+      btn.set({ acceptUpload: "image/*,.mp4"})
       uploader.addWidget(btn);
       doc.add(btn, {
         left: 250,
@@ -259,7 +260,7 @@ qx.Class.define("uploadmgr.demo.Application", {
       });
       uploader.addWidget(btnDisabled);
       doc.add(btnDisabled, {
-        left: 400,
+        left: 500,
         top: 460
       });
       var cbxDisabled = new qx.ui.form.CheckBox("Enable/Disable");
@@ -267,7 +268,7 @@ qx.Class.define("uploadmgr.demo.Application", {
         btnDisabled.setEnabled(evt.getData());
       });
       doc.add(cbxDisabled, {
-        left: 400,
+        left: 500,
         top: 440
       });
 
