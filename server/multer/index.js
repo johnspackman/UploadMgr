@@ -1,8 +1,25 @@
-var express = require('express')
-var multer  = require('multer')
-var upload = multer({ dest: 'uploads/' })
+var express = require('express');
+var cors = require('cors'); 
+var multer  = require('multer');
+var upload = multer({ dest: 'uploads/' });
 
-var app = express()
+var port = 9090;
+
+for (var argv = process.argv, i = 0; i < argv.length; i++) {
+	var arg = argv[i];
+	if (arg == "--port") {
+		port = parseInt(argv[i+1], 10);
+		if (isNaN(port) || port < 1) {
+			console.log("Cannot parse port number " + argv[i+1]);
+			process.exit(1);
+		}
+		i++;
+	}
+}
+
+var app = express();
+
+app.use(cors());
 
 app.post('/demoupload', upload.array('file'), function (req, res, next) {
 	console.log("Files uploaded: "+ JSON.stringify(req.files, null, 2));
@@ -17,7 +34,7 @@ app.get('/', function (req, res) {
 app.use("/qooxdoo", express.static("../../../qooxdoo/framework"));
 app.use("/uploadmgr", express.static("../.."));
 
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!');
+app.listen(port, function () {
+  console.log("Example app listening on port " + port + "!");
 });
 
