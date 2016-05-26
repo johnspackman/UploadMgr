@@ -52,15 +52,10 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
       var files = [];
       for (var i = 0; i < bomFiles.length; i++) {
         var bomFile = bomFiles[i];
-        var id = "upload-" + this._getUniqueFileId(),
-        // fix missing name in Safari 4
-        // filename = bomFile.fileName != null ? bomFile.fileName :
-        // bomFile.name,
-        filename = typeof bomFile.name != "undefined" ? bomFile.name : bomFile.fileName, file = new com.zenesis.qx.upload.File(
-            bomFile, filename, id),
-        // fileSize = bomFile.fileSize != null ? bomFile.fileSize :
-        // bomFile.size;
-        fileSize = typeof bomFile.size != "undefined" ? bomFile.size : bomFile.fileSize;
+        var id = "upload-" + this._getUniqueFileId();
+        var filename = typeof bomFile.name != "undefined" ? bomFile.name : bomFile.fileName;
+        var file = new com.zenesis.qx.upload.File(bomFile, filename, id);
+        var fileSize = typeof bomFile.size != "undefined" ? bomFile.size : bomFile.fileSize;
         file.setSize(fileSize);
         files.push(file);
       }
@@ -77,11 +72,39 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
         body += "--" + boundary + "--";
 
         xhr.open("POST", action, true);
-        xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-        xhr.setRequestHeader("X-File-Name", encodeURIComponent(file.getFilename()));
-        xhr.setRequestHeader("Content-Type", "multipart/form-data; boundary=" + boundary);
+        setRequestHeader("X-Requested-With", "XMLHttpRequest");
+        setRequestHeader("X-File-Name", encodeURIComponent(file.getFilename()));
+        setRequestHeader("Content-Type", "multipart/form-data; boundary=" + boundary);
         xhr.send(body);
       }
+      
+      function setRequestHeader(name, value) {
+      	xhr.setRequestHeader(name, value);
+      	headerLength += name.length + 2 + value.length + 1;
+      }
+      
+      /*
+       * The upload progress includes the size of the headers, but we cannot ask XMLHttpRequest what the
+       * headers were so we count the headers we set and also add these below.  This is never going to be
+       * completely accurate, but it gets us a lot closer.
+       */
+      var headerLength = 0;
+      var DEFAULT_HEADERS = {
+      		"Accept": "*/*",
+      		"Accept-Encoding": "gzip, deflate",
+      		"Accept-Language": "en,en-US;q=0.8",
+      		"Cache-Control": "no-cache",
+      		"Connection": "keep-alive",
+      		"Content-Length": "" + file.getSize(),
+      		"Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryTfptZDRmE8C3dZmW",
+      		"Host": document.location.host,
+      		"Origin": document.location.origin,
+      		"Pragma": "no-cache",
+      		"Referer": document.location.href,
+      		"User-Agent": navigator.userAgent
+      };
+      for (var key in DEFAULT_HEADERS)
+      	headerLength += DEFAULT_HEADERS[key].length + 1; 
 
       var xhr = new XMLHttpRequest();
       if (com.zenesis.qx.upload.XhrHandler.isWithCredentials())
@@ -92,11 +115,10 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
       file.setUserData("com.zenesis.qx.upload.XhrHandler", xhr);
 
       xhr.upload.onprogress = function(e) {
-        // self.debug("onprogress: lengthComputable=" + e.lengthComputable + ",
-        // total=" + e.total + ", loaded=" + e.loaded);
+        self.debug("onprogress: lengthComputable=" + e.lengthComputable + ", total=" + e.total + ", loaded=" + e.loaded + ", headerLength=" + headerLength);
         if (e.lengthComputable) {
-          file.setSize(e.total);
-          file.setProgress(e.loaded);
+          file.setSize(e.total - headerLength);
+          file.setProgress(e.loaded - headerLength);
         }
       };
 
@@ -114,14 +136,15 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
         var fd = new FormData();
 
         // build query string
-        var action = this._getUploader().getUploadUrl(), params = this._getMergedParams(file);
-        for ( var name in params)
+        var action = this._getUploader().getUploadUrl();
+        var params = this._getMergedParams(file);
+        for (var name in params)
           fd.append(name, encodeURIComponent(params[name]));
         fd.append("file", file.getBrowserObject());
 
         xhr.open("POST", action, true);
-        xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-        xhr.setRequestHeader("X-File-Name", encodeURIComponent(file.getFilename()));
+        setRequestHeader("X-Requested-With", "XMLHttpRequest");
+        setRequestHeader("X-File-Name", encodeURIComponent(file.getFilename()));
         xhr.send(fd);
 
       } else {
