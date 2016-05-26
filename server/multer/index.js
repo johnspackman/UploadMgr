@@ -1,9 +1,11 @@
+var fs = require("fs");
 var express = require('express');
 var cors = require('cors'); 
 var multer  = require('multer');
-var upload = multer({ dest: 'uploads/' });
 
 var port = 9090;
+var deleteOnUpload = false;
+var uploadPath = "uploads";
 
 for (var argv = process.argv, i = 0; i < argv.length; i++) {
 	var arg = argv[i];
@@ -14,15 +16,25 @@ for (var argv = process.argv, i = 0; i < argv.length; i++) {
 			process.exit(1);
 		}
 		i++;
+	} else if (arg == "--deleteOnUpload") {
+		deleteOnUpload++;
+	} else if (arg == "--uploadPath") {
+		uploadPath = argv[++i];
 	}
 }
 
+var upload = multer({ dest: uploadPath });
 var app = express();
 
 app.use(cors());
 
 app.post('/demoupload', upload.array('file'), function (req, res, next) {
 	console.log("Files uploaded: "+ JSON.stringify(req.files, null, 2));
+	if (deleteOnUpload) {
+		req.files.forEach(function(file) {
+			fs.unlink(file.path);
+		});
+	}
   res.send('Uploaded');
 })
 
