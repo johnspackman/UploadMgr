@@ -48,5 +48,9 @@ app.use("/uploadmgr", express.static("../.."));
 
 app.listen(port, function () {
   console.log("Example app listening on port " + port + "!");
+  console.log("\n** NOTE ** Remember to set your upload URL in your application to http://localhost:" + port + "/demoupload\n" +
+  		"if you are using the demo application, you can do this by adding \"?uploadUrl=http://localhost:" + port + "\", EG:\n" +
+  		"\n" +
+  		"    http://localhost:9090/uploadmgr/demo/default/source/index.html?uploadUrl=http://localhost:9090/demoupload\n");
 });
 
