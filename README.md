@@ -11,11 +11,9 @@ The UploadMgr contrib uploads files to the server, providing background uploads 
   * Modular transport
   * No other UI widgets required, eg no form etc just a button
 
-## Updates
-As of revision 21567 (18th Oct 2011) there is no longer a requirement to implement application/octet-stream for uploads - the normal multipart/form-data is sufficient
-
 ## Online Demo
-You can view the online demo at http://demo.qooxdoo.org/contrib/demobrowser/
+You can view the online demo at http://www.zenesis.com/UploadMgr/uploadmgr/demo/default/build/index.html
+
 # Getting Started
 You need a UploadButton for the user to click and an UploadMgr to make the upload work:
 
@@ -149,6 +147,7 @@ Included in the contrib are examples for Java, PHP, and Perl.
 18th Oct 2011 - multipart/form-data encoding is now used for all uploads; if the browser implements the FormData API (FF4+, Chrome7+) then it is used to do the encoding, otherwise the encoding is done "by hand" in javascript.  This means that no special server coding is required.
 
 28th Nov 2011 - parameters are now added to the File and UploadMgr objects, UploadHandler's addParam method is deprecated.
+
 ## Credits
 The Qooxdoo contrib UploadWidget (http://qooxdoo.org/contrib/project/uploadwidget) has been around for ages and provides a stable and mature widget; the authors (Dietrich Streifert & Tobias Oetiker) did the heavy lifting of making an upload widget work in Qooxdoo.
 

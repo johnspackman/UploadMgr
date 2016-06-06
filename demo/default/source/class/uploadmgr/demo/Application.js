@@ -66,18 +66,57 @@ qx.Class.define("uploadmgr.demo.Application", {
        */
       // Document is the application root
       var doc = this.getRoot();
+      var root = new qx.ui.container.Composite(new qx.ui.layout.VBox());
+      doc.add(root, { left: 0, top: 0, right: 0, bottom: 0 });
+      
+      // Header
+      var header = new qx.ui.container.Composite(new qx.ui.layout.HBox());
+      root.add(header);
+      header.add(new qx.ui.basic.Image("com/zenesis/qx/upload/banner.png").set({
+        padding: [ 0, 30 ]
+      }));
+      header.add(new qx.ui.basic.Label("UploadMgr<br>Contrib Demo").set({
+        font: new qx.bom.Font(20, [ "Arial" ]),
+        padding: [ 22, 20 ],
+        textColor: "white",
+        allowGrowX: true,
+        rich: true,
+        textAlign: "center"
+      }), {
+        flex: 1
+      });
+      header.add(new qx.ui.basic.Image("com/zenesis/qx/upload/logo.gif"));
+      header.setDecorator(new qx.ui.decoration.Decorator().set({
+      	backgroundImage: "com/zenesis/qx/upload/banner-bg.png",
+        backgroundPositionX: 0
+      }));
+
+      root.add(new qx.ui.basic.Label("Written by John Spackman <a href='mailto:john.spackman@zenesis.com'>john.spackman@zenesis.com</a>, (c) Zenesis Ltd <a href='http://www.zenesis.com' target='_blank'>http://www.zenesis.com</a>").set({
+        rich: true,
+        font: new qx.bom.Font(13, [ "Arial", "Lucida Grande" ]),
+        textAlign: "center",
+        allowGrowX: true,
+        padding: [ 10, 0]
+      }));
+      
+      
+      var body = new qx.ui.container.Composite(new qx.ui.layout.Canvas());
+      root.add(body, { flex: 1 });
 
       var btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "uploadmgr/demo/test.png");
       var lst = new qx.ui.form.List();
       var uploadCount = 0;
 
-      // Uploader controls the upload process; btn is the widget that
-      // will have the input[type=file]
-      // attached, and "/demoupload" is the path files will be uploaded
-      // to (i.e. it's the value used
+      // Uploader controls the upload process; btn is the widget that will have the input[type=file]
+      // attached, and "/demoupload" is the path files will be uploaded to (i.e. it's the value used
       // for the form's action attribute)
       //
-      var uploader = new com.zenesis.qx.upload.UploadMgr(btn, "http://localhost:8080/demoupload"); // "http://my.grasshopperwebsites.com:8080/demoupload"
+      var uploadUrl = "http://www.zenesis.com/UploadMgr/demoupload";
+      //var uploadUrl = "http://localhost:9090/demoupload";
+      var match = document.location.href.match(/uploadUrl=([^&]+)$/);
+      if (match)
+      	uploadUrl = match[1];
+      var uploader = new com.zenesis.qx.upload.UploadMgr(btn, uploadUrl);
 
       // Parameter tp be added to all uploads (can be overridden by
       // individual files)
@@ -132,9 +171,9 @@ qx.Class.define("uploadmgr.demo.Application", {
         this.debug("Added file " + file.getFilename());
       }, this);
 
-      doc.add(btn, {
+      body.add(btn, {
         left: 50,
-        top: 115
+        top: 0
       });
 
       // Create a button to cancel the upload selected in the list
@@ -163,118 +202,84 @@ qx.Class.define("uploadmgr.demo.Application", {
       lst.set({
         width: 500
       });
-      doc.add(cbx, {
+      body.add(cbx, {
         left: 170,
-        top: 115
+        top: 0
       });
-      doc.add(lst, {
+      body.add(lst, {
         left: 170,
-        top: 130
+        top: 15
       });
-      doc.add(btnCancel, {
+      body.add(btnCancel, {
         left: 690,
-        top: 115
-      });
-
-      // Header
-      var comp = new qx.ui.container.Composite(new qx.ui.layout.HBox());
-      comp.add(new qx.ui.basic.Image("com/zenesis/qx/upload/banner.png").set({
-        padding: [ 0, 30 ]
-      }));
-      comp.add(new qx.ui.basic.Label("UploadMgr Contrib Demo").set({
-        font: new qx.bom.Font(28, [ "Arial" ]),
-        padding: [ 22, 20 ],
-        textColor: "white",
-        allowGrowX: true
-      }), {
-        flex: 1
-      });
-      comp.add(new qx.ui.basic.Image("com/zenesis/qx/upload/logo.gif"));
-      doc.add(comp, {
-        top: 0,
-        left: 0,
-        right: 0
-      });
-      /*
-       * comp.setDecorator(new qx.ui.decoration.Background().set({
-       * backgroundImage: "com/zenesis/qx/upload/banner-bg.png",
-       * backgroundPositionX: 0 }));
-       */
-      doc.add(new qx.ui.basic.Label("<a href='http://www.zenesis.com' target='_blank'>http://www.zenesis.com</a>").set({
-        rich: true,
-        font: new qx.bom.Font(13, [ "Arial", "Lucida Grande" ])
-      }), {
-        left: 95,
-        top: 85
+        top: 0
       });
 
       // Descriptions
-      var lbl = new qx.ui.basic.Label(
-          "This is a demo for the Qooxdoo UploadMgr contrib which can be found at <a href='http://qooxdoo.org/contrib/project/uploadmgr'>http://qooxdoo.org/contrib/project/uploadmgr</a>; "
-              + "UploadMgr supports background uploads with progress feedback for modern browsers with fallback for older browsers (eg IE6-IE8).")
+      var descs = new qx.ui.container.Composite(new qx.ui.layout.VBox());
+      body.add(descs, { left: 100, top: 210 });
+      
+      descs.add(new qx.ui.basic.Label(
+          "This is a demo for the Qooxdoo UploadMgr contrib which can be found at " +
+          "<a href='https://github.com/johnspackman/UploadMgr'>https://github.com/johnspackman/UploadMgr</a>; " + 
+          "UploadMgr supports background uploads with progress feedback for modern browsers with fallback for " +
+          "older browsers (eg IE6-IE8).")
           .set({
             rich: true,
-            width: 700
-          });
-      doc.add(lbl, {
-        left: 100,
-        top: 340
-      });
-      var lbl = new qx.ui.basic.Label(
-          "You can upload anything you like to test this (or as many as you like); the files will be deleted after the upload completes.")
-          .set({
-            rich: true,
-            width: 700
-          });
-      doc.add(lbl, {
-        left: 100,
-        top: 390
-      });
+            width: 700,
+            margin: [ 8, 0 ]
+          }));
+      descs.add(new qx.ui.basic.Label(
+	      "<b>Upload Destination: </b> This application will upload to " + uploadUrl + " - you can change that by " +
+	      		"editing the Application.js or adding \"?uploadUrl=\" to the URL.")
+	      .set({
+	        rich: true,
+	        width: 700,
+          margin: [ 8, 0 ]
+	      }));
 
-      var lbl = new qx.ui.basic.Label(
-          "Update:: You can now have multiple upload buttons per UploadMgr instance - below are a few extra upload buttons for testing.")
-          .set({
-            rich: true,
-            width: 700
-          });
-      doc.add(lbl, {
-        left: 100,
-        top: 420
-      });
+      descs.add(new qx.ui.basic.Label(
+	      "Update:: You can now have multiple upload buttons per UploadMgr instance - below are a few extra upload buttons for testing.")
+	      .set({
+	        rich: true,
+	        width: 700,
+          margin: [ 8, 0 ]
+	      }));
 
       btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "uploadmgr/demo/test.png");
       uploader.addWidget(btn);
-      doc.add(btn, {
+      body.add(btn, {
         left: 100,
-        top: 460
+        top: 345
       });
-      btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "uploadmgr/demo/test.png");
+      btn = new com.zenesis.qx.upload.UploadButton("Add Image or *.mp4 File(s)", "uploadmgr/demo/test.png");
+      btn.set({ acceptUpload: ".png,.mp4"})
       uploader.addWidget(btn);
-      doc.add(btn, {
+      body.add(btn, {
         left: 250,
-        top: 460
+        top: 345
       });
       var btnDisabled = new com.zenesis.qx.upload.UploadButton("Add File(s)", "uploadmgr/demo/test.png").set({
         enabled: false
       });
       uploader.addWidget(btnDisabled);
-      doc.add(btnDisabled, {
-        left: 400,
-        top: 460
+      body.add(btnDisabled, {
+        left: 500,
+        top: 345
       });
       var cbxDisabled = new qx.ui.form.CheckBox("Enable/Disable");
       cbxDisabled.addListener("changeValue", function(evt) {
         btnDisabled.setEnabled(evt.getData());
       });
-      doc.add(cbxDisabled, {
-        left: 400,
-        top: 440
+      body.add(cbxDisabled, {
+        left: 500,
+        top: 325
       });
 
       var tb = new qx.ui.toolbar.ToolBar();
-      doc.add(tb, {
+      body.add(tb, {
         left: 100,
-        top: 510
+        top: 395
       });
       var part = new qx.ui.toolbar.Part();
       tb.add(part);
@@ -309,9 +314,9 @@ qx.Class.define("uploadmgr.demo.Application", {
       var atom = new qx.ui.basic.Atom("<span style='cursor: pointer'>qx.ui.basic.Atom upload button</span>").set({
         rich: true
       });
-      doc.add(atom, {
+      body.add(atom, {
         left: 100,
-        top: 575
+        top: 460
       });
       uploader.addWidget(atom);
     }

@@ -35,11 +35,17 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
       css.height = '100%';
     }
 
-    this.base(arguments, 'input', css, {
-      type: 'file',
-      name: name,
-      title: ' '
-    });
+    var attrs = {
+        type: 'file',
+        name: name,
+        title: ' '
+      };
+    if (qx.Class.hasMixin(widget.constructor, com.zenesis.qx.upload.MUploadButton)) {
+	    var accept = widget.getAcceptUpload();
+	    if (accept)
+	    	attrs.accept = accept;
+    }
+    this.base(arguments, 'input', css, attrs);
     this.__widget = widget;
     this.setMultiple(!!multiple);
   },

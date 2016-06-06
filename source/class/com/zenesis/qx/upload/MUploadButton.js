@@ -29,6 +29,27 @@
  */
 qx.Mixin.define("com.zenesis.qx.upload.MUploadButton", {
   include: [ com.zenesis.qx.upload.MParameters ],
+  
+  properties: {
+  	/**
+  	 * File types which are acceptable for upload; note that this is not guaranteed
+  	 * because not all (older) browsers support it, but where available it will
+  	 * restrict the file open dialog to only allow these file types.
+  	 * 
+  	 * This value is passed directly through to the input tag's accept attribute, so
+  	 * the format can be seen here: {@link http://www.w3schools.com/tags/att_input_accept.asp};
+  	 * in summary, it is a comma separated list of file extensions (with the dot) and/or
+  	 * MIME types; EG:
+  	 * 
+  	 * 	.jpg,.png,.gif			-- Images
+  	 * 	image/*,.mp4				-- Images and *.mp4
+  	 */
+  	acceptUpload: {
+  		init: null,
+  		nullable: true,
+  		check: "String"
+  	}
+  },
 
   members: {
     // overridden
