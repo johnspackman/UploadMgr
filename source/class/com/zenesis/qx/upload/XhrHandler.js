@@ -98,11 +98,12 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
       		"Content-Length": "" + file.getSize(),
       		"Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryTfptZDRmE8C3dZmW",
       		"Host": document.location.host,
-      		"Origin": document.location.origin,
       		"Pragma": "no-cache",
       		"Referer": document.location.href,
       		"User-Agent": navigator.userAgent
       };
+      if (document.location.origin)
+        DEFAULT_HEADERS.Origin = document.location.origin;
       for (var key in DEFAULT_HEADERS)
       	headerLength += DEFAULT_HEADERS[key].length + 1; 
 
