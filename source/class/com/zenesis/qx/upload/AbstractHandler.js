@@ -224,7 +224,7 @@ qx.Class.define("com.zenesis.qx.upload.AbstractHandler", {
      *          {String} the name of the parameter
      * @param value
      *          {String} the value of the parameter
-     * @deprecated see com.zenesis.qx.upload.UploadMgr.setParam or
+     * @deprecated {1.0} see com.zenesis.qx.upload.UploadMgr.setParam or
      *             com.zenesis.qx.upload.File.setParam
      */
     addParam: function(key, value) {
@@ -237,7 +237,7 @@ qx.Class.define("com.zenesis.qx.upload.AbstractHandler", {
      * Returns the paramaters map
      * 
      * @returns {Map}
-     * @deprecated see com.zenesis.qx.upload.File.getParam
+     * @deprecated {1.0} see com.zenesis.qx.upload.File.getParam
      */
     getParams: function() {
       qx.log.Logger.deprecatedMethodWarning(arguments.callee,
