@@ -186,7 +186,7 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
     /**
      * Removes a widget
      * 
-     * @param widget
+     * @param widget {qx.ui.core.Widget} Widget to remvove
      */
     removeWidget: function(widget) {
       var data = this.__widgetsData[widget.toHashCode()];
@@ -203,7 +203,7 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
      * Helper method that corrects the size of the input element to match the
      * size of the widget
      * 
-     * @param widget
+     * @param widget {qx.ui.core.Widget} Widget to fixup size
      */
     __fixupSize: function(widget) {
       var data = this.__widgetsData[widget.toHashCode()];
@@ -216,22 +216,12 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       }
     },
 
-    /**
-     * Callback for changes to the autoUpload property
-     * 
-     * @param value
-     * @param oldValue
-     */
+    // property apply
     _applyAutoUpload: function(value, oldValue) {
       this.getUploadHandler().beginUploads();
     },
 
-    /**
-     * Callback for changes to the multiple property
-     * 
-     * @param value
-     * @param oldValue
-     */
+    // property apply
     _applyMultiple: function(value, oldValue) {
       for ( var hash in this.__widgetsData) {
         var data = this.__widgetsData[hash];
@@ -240,9 +230,7 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       }
     },
 
-    /**
-     * Callback for changes to the requireMultipartFormData property
-     */
+    // property apply
     _applyRequireMultipartFormData: function(value, oldValue) {
       if (this.__uploadHandler)
         throw new Error("Changing the requireMultipartFormData property of " + this + " has no effect once uploads have started");
@@ -251,7 +239,7 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
     /**
      * Cancels a file being uploaded
      * 
-     * @param file
+     * @param file {String} Upload to cancel
      */
     cancel: function(file) {
       this.getUploadHandler().cancel(file);
@@ -259,8 +247,6 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
 
     /**
      * Cancels all files being uploaded
-     * 
-     * @param file
      */
     cancelAll: function() {
       this.getUploadHandler().cancelAll();
@@ -307,7 +293,8 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
      * Callback for changes to the input[ty=file]'s value, ie this is called
      * when the user has selected a file to upload
      * 
-     * @param evt
+     * @param elem {Element} Element which is affected
+     * @param evt {Event} Event data
      */
     _onInputChange: function(elem, evt) {
       var widget = elem.getWidget();

@@ -145,7 +145,7 @@ qx.Class.define("com.zenesis.qx.upload.File", {
     /**
      * Returns a parameter value to be sent with the file
      * 
-     * @param name
+     * @param name {String} Name of the parameter
      * @returns {Boolean}
      */
     getParam: function(name) {
@@ -174,12 +174,7 @@ qx.Class.define("com.zenesis.qx.upload.File", {
       return this.__browserObject;
     },
 
-    /**
-     * Called for changes to the state
-     * 
-     * @param value
-     * @param oldValue
-     */
+    // property apply
     _applyState: function(value, oldValue) {
       qx.core.Assert.assertTrue((!oldValue && value == "not-started")
           || (oldValue == "not-started" && (value == "cancelled" || value == "uploading"))

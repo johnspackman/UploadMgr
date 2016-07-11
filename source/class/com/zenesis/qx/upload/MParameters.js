@@ -50,7 +50,7 @@ qx.Mixin.define("com.zenesis.qx.upload.MParameters", {
     /**
      * Returns a parameter value to be sent with the file
      * 
-     * @param name
+     * @param name {String} Name of the parameter
      * @returns {Boolean}
      */
     getParam: function(name) {
