@@ -46,7 +46,7 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
 	    	attrs.accept = accept;
     }
     this.base(arguments, 'input', css, attrs);
-    this.__widget = widget;
+    this.__relatedWidget = widget;
     this.setMultiple(!!multiple);
   },
 
@@ -59,10 +59,10 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
   },
 
   members: {
-    __widget: null,
+    __relatedWidget: null,
 
     getWidget: function() {
-      return this.__widget;
+      return this.__relatedWidget;
     },
 
     _applyMultiple: function(value, oldValue) {
