@@ -129,6 +129,7 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
           // self.debug("xhr server status=" + xhr.status + ", responseText=" +
           // response);
           file.setUserData("com.zenesis.qx.upload.XhrHandler", null);
+          file.setStatus(xhr.status);
           self._onCompleted(file, response);
         }
       };
