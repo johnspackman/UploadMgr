@@ -118,6 +118,16 @@ qx.Class.define("com.zenesis.qx.upload.File", {
       init: null,
       nullable: true,
       event: "changeUploadWidget"
+    },
+
+    /**
+     * The status of an XHR request. This can be used to determine if the
+     * upload was successful.
+     */
+    status: {
+      init: null,
+      nullable: true,
+      event: "changeStatus"
     }
   },
 
