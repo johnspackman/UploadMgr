@@ -44,9 +44,12 @@ Attach listeners to com.zenesis.qx.upload.File to track progress:
 uploader.addListener("addFile", function(evt) {
 	var file = evt.getData();
 	var progressListenerId = file.addListener("changeProgress", function(evt) {
+		var file = evt.getTarget();
+		var uploadedSize = evt.getData();
+		
 		this.debug("Upload " + file.getFilename() + ": " + 
-			evt.getData() + " / " + file.getSize() + " - " +
-   			Math.round(evt.getData() / file.getSize() * 100) + "%");
+			uploadedSize + " / " + file.getSize() + " - " +
+   			Math.round(uploadedSize / file.getSize() * 100) + "%");
 	}, this);
 	// …snip… //
 ```
@@ -57,13 +60,14 @@ The "progress" property will give feedback about the quantity of data uploaded s
 // All browsers can at least get changes in state
 var stateListenerId = file.addListener("changeState", function(evt) {
 	var state = evt.getData();
+	var file = evt.getTarget();
 				
 	if (state == "uploading")
-		item.setLabel(file.getFilename() + " (Uploading...)");
+		this.debug(file.getFilename() + " (Uploading...)");
 	else if (state == "uploaded")
-		item.setLabel(file.getFilename() + " (Complete)");
+		this.debug(file.getFilename() + " (Complete)");
 	else if (state == "cancelled")
-		item.setLabel(file.getFilename() + " (Cancelled)");
+		this.debug(file.getFilename() + " (Cancelled)");
 
 	// Remove the listeners
 	if (state == "uploaded" || state == "cancelled") {
