@@ -209,10 +209,15 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       var data = this.__widgetsData[widget.toHashCode()];
       if (data && data.inputElement) {
         var bounds = widget.getBounds();
-        data.inputElement.setStyles({
-          width: bounds.width + "px",
-          height: bounds.height + "px"
-        });
+        // It may be that if the widgets icon is styled
+        // through a theme, neither label nor icon are set yet.
+        // In this situation bounds calculation would fail.
+        if(bounds) { 
+          data.inputElement.setStyles({
+            width: bounds.width + "px",
+            height: bounds.height + "px"
+          });
+        }
       }
     },
 
