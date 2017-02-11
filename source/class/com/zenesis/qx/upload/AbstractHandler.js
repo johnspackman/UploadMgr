@@ -95,6 +95,17 @@ qx.Class.define("com.zenesis.qx.upload.AbstractHandler", {
     },
 
     /**
+     * Adds a blob to the upload list 
+     * 
+     * @param filename    {String}  name of object
+     * @param blob        {Blob}    the blob to upload
+     * @param params      {Object}  List of params added to the upload params
+     */
+    addBlob: function (filename, blob, params){
+      /* abstract */
+    },
+
+    /**
      * Adds a file to the outbound queue
      * 
      * @param file
