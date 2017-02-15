@@ -41,6 +41,23 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
   extend: com.zenesis.qx.upload.AbstractHandler,
 
   members: {
+      
+    /*
+     * @Override
+     */
+    addBlob: function (filename, blob, params){
+     var id = "upload-" + this._getUniqueFileId();
+     var file = new com.zenesis.qx.upload.File(blob, filename, id);
+     if (params) {
+      for (var name in params) {
+         var value = params[name];
+         if (value !== null)
+           file.setParam(name, value);
+      }
+     }
+     this._addFile(file);
+    },
+      
     /*
      * @Override
      */

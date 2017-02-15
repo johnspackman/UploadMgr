@@ -103,7 +103,7 @@ qx.Class.define("uploadmgr.demo.Application", {
       var body = new qx.ui.container.Composite(new qx.ui.layout.Canvas());
       root.add(body, { flex: 1 });
 
-      var btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "uploadmgr/demo/test.png");
+      var btn = new com.zenesis.qx.upload.UploadButton("btn 1 Add File(s)", "uploadmgr/demo/test.png");
       var lst = new qx.ui.form.List();
       var uploadCount = 0;
 
@@ -246,7 +246,7 @@ qx.Class.define("uploadmgr.demo.Application", {
           margin: [ 8, 0 ]
 	      }));
 
-      btn = new com.zenesis.qx.upload.UploadButton("Add File(s)", "uploadmgr/demo/test.png");
+      btn = new com.zenesis.qx.upload.UploadButton("btn 2 Add File(s)", "uploadmgr/demo/test.png");
       uploader.addWidget(btn);
       body.add(btn, {
         left: 100,
@@ -319,6 +319,10 @@ qx.Class.define("uploadmgr.demo.Application", {
         top: 460
       });
       uploader.addWidget(atom);
+      
+     var myBlob = new Blob(["This is my blob content"], {type : "text/plain"});      
+     uploader.addBlob("test", myBlob);
+
     }
   }
 });

@@ -27,6 +27,7 @@
  * current uploads, and restricts the number of simultaneous uploads.
  */
 qx.Class.define("com.zenesis.qx.upload.AbstractHandler", {
+  type : "abstract", 
   extend: qx.core.Object,
 
   /**
@@ -92,6 +93,17 @@ qx.Class.define("com.zenesis.qx.upload.AbstractHandler", {
           files[i].setUploadWidget(widget);
           this._addFile(files[i]);
         }
+    },
+
+    /**
+     * Adds a blob to the upload list 
+     * 
+     * @param filename    {String}  name of object
+     * @param blob        {Blob}    the blob to upload
+     * @param params      {Object}  List of params added to the upload params
+     */
+    addBlob: function (filename, blob, params){
+      /* abstract */
     },
 
     /**

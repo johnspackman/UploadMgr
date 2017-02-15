@@ -35,6 +35,12 @@ qx.Class.define("com.zenesis.qx.upload.FormHandler", {
   extend: com.zenesis.qx.upload.AbstractHandler,
 
   members: {
+    /*
+     * @Override
+     */
+    addBlob: function (filename, blob, params) {
+	   throw new Error("addBlob is not supported in the FormHandler.");	
+    },
 
     /*
      * @Override

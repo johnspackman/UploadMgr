@@ -198,7 +198,19 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
         delete this.__widgetsData[widget.toHashCode()];
       }
     },
-
+    
+    /**
+     * Adds a blob to the upload list 
+     * 
+     * @param blob    {Blob}    the blob to upload
+     * @param params  {Object}  List of params added to the upload params
+     */
+    addBlob: function (filename, blob, params){
+      this.getUploadHandler().addBlob(filename, blob, params);
+      if (this.getAutoUpload())
+        this.getUploadHandler().beginUploads();
+    },
+    
     /**
      * Helper method that corrects the size of the input element to match the
      * size of the widget
