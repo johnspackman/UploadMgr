@@ -27,6 +27,7 @@
  * current uploads, and restricts the number of simultaneous uploads.
  */
 qx.Class.define("com.zenesis.qx.upload.AbstractHandler", {
+  type : "abstract", 
   extend: qx.core.Object,
 
   /**
