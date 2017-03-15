@@ -287,8 +287,7 @@ qx.Class.define("com.zenesis.qx.upload.AbstractHandler", {
       if (widget && (typeof widget.getParamNames == "function"))
         merge(widget);
       if (typeof file.getParamNames == "function")
-        merge(file.getUploadWidget());
-      merge(file);
+        merge(file);
       return result;
     },
 
