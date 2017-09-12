@@ -10,8 +10,7 @@
      2011 Zenesis Limited, http://www.zenesis.com
 
    License:
-     LGPL: http://www.gnu.org/licenses/lgpl.html
-     EPL: http://www.eclipse.org/org/documents/epl-v10.php
+     MIT: https://opensource.org/licenses/MIT
      
      This software is provided under the same licensing terms as Qooxdoo,
      please see the LICENSE file in the Qooxdoo project's top-level directory 
