@@ -292,7 +292,8 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       var elem = data.inputElement;
       var container = widget.getContentElement();
       data.inputElement = null;
-      container.remove(elem);
+      if (elem)
+        container.remove(elem);
     },
 
     /**
