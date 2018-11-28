@@ -17,8 +17,8 @@
       }
     ],
 
-    "version" : "trunk",
-    "qooxdoo-range": "1.5 - 6.0.0-alpha"
+    "version" : "1.0.0",
+    "qooxdoo-range": "1.5 - 6.0.0-alpha-*"
   },
   
   "provides" : 
