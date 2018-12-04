@@ -11,7 +11,7 @@
         "email": "john.spackman@zenesis.com"
       }
     ],
-    "version": "1.0.3",
+    "version": "1.0.4",
     "qooxdoo-range": "1.5 - 5.9 || >6.0.0-alpha"
   },
   "provides": {
