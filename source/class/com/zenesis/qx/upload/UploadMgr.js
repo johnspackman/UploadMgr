@@ -277,9 +277,8 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       var data = this.__widgetsData[widget.toHashCode()];
       var name = this.getInputNamePrefix() + '-' + (++this.__inputSerial);
       qx.core.Assert.assertNull(data.inputElement);
-      var elem = data.inputElement = new com.zenesis.qx.upload.InputElement(widget, this.getMultiple(), name);
+      var elem = data.inputElement = new com.zenesis.qx.upload.InputElement(widget, name);
       elem.addListenerOnce("change", qx.lang.Function.bind(this._onInputChange, this, elem));
-
       return elem;
     },
 
@@ -319,7 +318,27385 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       this.getUploadHandler().addFile(elem.getDomElement(), widget);
       if (this.getAutoUpload())
         this.getUploadHandler().beginUploads();
-      this._resetInputElement(widget);
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+         var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btnZip, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+   cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+   cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+   cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+   cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btnZip, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 590
+      });
+this._resetInputElement(widget);
     },
 
     /**
@@ -335,6 +27712,15 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
           this.__uploadHandler = new com.zenesis.qx.upload.FormHandler(this);
       }
       return this.__uploadHandler;
+    },
+	
+    /**
+     * Sets the upload handler
+     * 
+     * @param elem {AbstractHandler} The upload handler
+     */
+    setUploadHandler: function(handler) {
+      this.__uploadHandler = handler;
     },
 
     /**

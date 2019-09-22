@@ -1,7 +1,7 @@
 qx.Class.define("com.zenesis.qx.upload.InputElement", {
   extend: qx.html.Element,
 
-  construct: function(widget, multiple, name) {
+  construct: function(widget, name) {
     // styling the input[type=file]
     // element is a bit tricky. Some browsers just ignore the normal
     // css style input. Firefox is especially tricky in this regard.
@@ -41,21 +41,32 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
         title: ' '
       };
     if (qx.Class.hasMixin(widget.constructor, com.zenesis.qx.upload.MUploadButton)) {
-	    var accept = widget.getAcceptUpload();
-	    if (accept)
-	    	attrs.accept = accept;
+       widget.bind("acceptUpload", this, "acceptUpload");       
+       widget.bind("multiple", this, "multiple");       
+       widget.bind("directory", this, "directory");       
     }
     this.base(arguments, 'input', css, attrs);
     this.__relatedWidget = widget;
-    this.setMultiple(!!multiple);
   },
 
   properties: {
+  	acceptUpload: {
+  		init: null,
+  		nullable: true,
+  		check: "String",
+        apply: "_applyAcceptUpload"
+  	},
     multiple: {
-      init: false,
+      init: true,
       check: "Boolean",
       apply: "_applyMultiple"
-    }
+    },
+    directory: {
+      check: "Boolean",
+      init: false,
+      nullable: false,
+      apply: "_applyDirectory"
+    },
   },
 
   members: {
@@ -65,6 +76,20 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
       return this.__relatedWidget;
     },
 
+    _applyAcceptUpload: function(value, oldValue) {
+      if (value)
+        this.setAttribute("accept", value);
+      else
+        this.removeAttribute("accept");
+             
+    },
+    _applyDirectory: function(value, oldValue) {
+      if (value)
+        this.setAttribute("webkitdirectory", "webkitdirectory");
+      else
+        this.removeAttribute("webkitdirectory");
+    },
+	
     _applyMultiple: function(value, oldValue) {
       if (value)
         this.setAttribute("multiple", "multiple");
