@@ -44,19 +44,19 @@ qx.Mixin.define("com.zenesis.qx.upload.MUploadButton", {
   	 * 	.jpg,.png,.gif			-- Images
   	 * 	image/*,.mp4				-- Images and *.mp4
   	 */
-  	acceptUpload: {
-  		init: null,
-  		nullable: true,
-  		check: "String",
-        event: "changeAcceptUpload" 	  
-  	},
+    acceptUpload: {
+       init: null,
+       nullable: true,
+       check: "String",
+       event: "changeAcceptUpload" 	  
+   },
     /**
      * Whether to support multiple files (default=true); this is not supported
      * on older browsers
      */
     multiple: {
       check: "Boolean",
-      init: true,
+      init: false,
       nullable: false,
       event: "changeMultiple" 	  
     },

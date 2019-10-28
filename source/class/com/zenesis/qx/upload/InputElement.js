@@ -50,20 +50,21 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
   },
 
   properties: {
-  	acceptUpload: {
-  		init: null,
-  		nullable: true,
-  		check: "String",
-        apply: "_applyAcceptUpload"
-  	},
+  acceptUpload: {
+      init: null,
+      nullable: true,
+      check: "String",
+      apply: "_applyAcceptUpload"
+    },
     multiple: {
-      init: true,
+      init: false,
       check: "Boolean",
+      nullable: false,
       apply: "_applyMultiple"
     },
     directory: {
-      check: "Boolean",
       init: false,
+      check: "Boolean",
       nullable: false,
       apply: "_applyDirectory"
     },
