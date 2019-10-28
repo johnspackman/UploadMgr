@@ -82,7 +82,7 @@ qx.Class.define("com.zenesis.qx.upload.ZipHandler", {
      * @Override
      */
     _doUpload: function(file) {
-	   this.__zip.file(file.getFilename(), file.getBrowserObject());
+       this.__zip.file(file.getFilename(), file.getBrowserObject());
        this._onCompleted(file, "add to zip");
 	   
     },
