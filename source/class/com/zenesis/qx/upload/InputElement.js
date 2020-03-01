@@ -67,7 +67,7 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
       check: "Boolean",
       nullable: false,
       apply: "_applyDirectory"
-    },
+    }
   },
 
   members: {
@@ -77,25 +77,25 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
       return this.__relatedWidget;
     },
 
-    _applyAcceptUpload: function(value, oldValue) {
+    _applyAcceptUpload: function(value) {
       if (value)
-        this.setAttribute("accept", value);
+        this.setAttribute("accept", value, true);
       else
-        this.removeAttribute("accept");
+        this.removeAttribute("accept", true);
              
     },
-    _applyDirectory: function(value, oldValue) {
+    _applyDirectory: function(value) {
       if (value)
-        this.setAttribute("webkitdirectory", "webkitdirectory");
+        this.setAttribute("webkitdirectory", "webkitdirectory", true);
       else
-        this.removeAttribute("webkitdirectory");
+        this.removeAttribute("webkitdirectory", true);
     },
 	
-    _applyMultiple: function(value, oldValue) {
+    _applyMultiple: function(value) {
       if (value)
-        this.setAttribute("multiple", "multiple");
+        this.setAttribute("multiple", "multiple", true);
       else
-        this.removeAttribute("multiple");
+        this.removeAttribute("multiple", true);
     }
   }
 });

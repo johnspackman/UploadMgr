@@ -105,6 +105,13 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       apply: "_applyMultiple"
     },
 
+    directory: {
+      init: false,
+      check: "Boolean",
+      nullable: false,
+      apply: "_applyDirectory"
+    },
+
     /**
      * Prefix to apply to the name of input fields
      */
@@ -246,6 +253,15 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       }
     },
 
+    // property directory
+    _applyDirectory: function(value, oldValue) {
+      for ( var hash in this.__widgetsData) {
+        var data = this.__widgetsData[hash];
+        if (data.inputElement)
+          data.inputElement.setDirectory(value);
+      }
+    },
+
     // property apply
     _applyRequireMultipartFormData: function(value, oldValue) {
       if (this.__uploadHandler)
@@ -278,8 +294,9 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       var name = this.getInputNamePrefix() + '-' + (++this.__inputSerial);
       qx.core.Assert.assertNull(data.inputElement);
       var elem = data.inputElement = new com.zenesis.qx.upload.InputElement(widget, name);
+      elem.setMultiple(this.getMultiple());  
+      elem.setDirectory(this.getDirectory());  
       elem.addListenerOnce("change", qx.lang.Function.bind(this._onInputChange, this, elem));
-
       return elem;
     },
 
