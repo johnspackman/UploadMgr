@@ -187,6 +187,11 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
           this._removeInputElement(widget);
         }
       }, this);
+      if (qx.Class.hasMixin(widget.constructor, com.zenesis.qx.upload.MUploadButton)) {
+        this.bind("multiple", widget, "multiple");       
+        this.bind("directory", widget, "directory");       
+     }
+  
     },
 
     /**
@@ -294,8 +299,6 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       var name = this.getInputNamePrefix() + '-' + (++this.__inputSerial);
       qx.core.Assert.assertNull(data.inputElement);
       var elem = data.inputElement = new com.zenesis.qx.upload.InputElement(widget, name);
-      elem.setMultiple(this.getMultiple());  
-      elem.setDirectory(this.getDirectory());  
       elem.addListenerOnce("change", qx.lang.Function.bind(this._onInputChange, this, elem));
       return elem;
     },
