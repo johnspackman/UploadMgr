@@ -40,13 +40,13 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
         name: name,
         title: ' '
       };
-    if (qx.Class.hasMixin(widget.constructor, com.zenesis.qx.upload.MUploadButton)) {
-       widget.bind("acceptUpload", this, "acceptUpload");       
-       widget.bind("multiple", this, "multiple");       
-       widget.bind("directory", this, "directory");       
-    }
     this.base(arguments, 'input', css, attrs);
-    this.__relatedWidget = widget;
+    if (qx.Class.hasMixin(widget.constructor, com.zenesis.qx.upload.MUploadButton)) {
+      widget.bind("acceptUpload", this, "acceptUpload");       
+      widget.bind("multiple", this, "multiple");       
+      widget.bind("directory", this, "directory");       
+   }
+   this.__relatedWidget = widget;
   },
 
   properties: {
@@ -82,7 +82,6 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
         this.setAttribute("accept", value, true);
       else
         this.removeAttribute("accept", true);
-             
     },
     _applyDirectory: function(value) {
       if (value)
