@@ -102,14 +102,16 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       init: true,
       nullable: false,
       event: "changeMultiple",
-      apply: "_applyMultiple"
+      apply: "_applyMultiple",
+      event: "changeMultiple" 	  
     },
 
     directory: {
       init: false,
       check: "Boolean",
       nullable: false,
-      apply: "_applyDirectory"
+      apply: "_applyDirectory",
+      event: "changeDirectory" 	  
     },
 
     /**
