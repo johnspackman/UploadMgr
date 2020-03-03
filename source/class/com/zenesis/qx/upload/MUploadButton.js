@@ -1,3 +1,4 @@
+
 /* ***********************************************************************
 
    UploadMgr - provides an API for uploading one or multiple files
@@ -43,11 +44,32 @@ qx.Mixin.define("com.zenesis.qx.upload.MUploadButton", {
   	 * 	.jpg,.png,.gif			-- Images
   	 * 	image/*,.mp4				-- Images and *.mp4
   	 */
-  	acceptUpload: {
-  		init: null,
-  		nullable: true,
-  		check: "String"
-  	}
+    acceptUpload: {
+       init: null,
+       nullable: true,
+       check: "String",
+       event: "changeAcceptUpload" 	  
+   },
+    /**
+     * Whether to support multiple files (default=true); this is not supported
+     * on older browsers
+     */
+    multiple: {
+      check: "Boolean",
+      init: false,
+      nullable: false,
+      event: "changeMultiple" 	  
+    },
+    /**
+     * Whether to support directories only (default=false); this is not supported
+     * on older browsers
+     */
+    directory: {
+      check: "Boolean",
+      init: false,
+      nullable: false,
+      event: "changeDirectory" 	  
+    }
   },
 
   members: {

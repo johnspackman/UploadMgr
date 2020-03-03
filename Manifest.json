@@ -15,6 +15,12 @@
     "resource": "source/resource",
     "translation": "source/translation"
   },
+  "externalResources": {
+    "script": [
+      "jszip.js",
+      "FileSaver.js"
+    ]
+  },
   "$schema": "https://raw.githubusercontent.com/qooxdoo/qooxdoo-compiler/master/source/resource/qx/tool/schema/Manifest-1-0-0.json",
   "requires": {
     "@qooxdoo/compiler": "^1.0.0-beta",

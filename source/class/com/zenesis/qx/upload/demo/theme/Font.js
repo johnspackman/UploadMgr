@@ -8,11 +8,11 @@
 
 ************************************************************************ */
 
-qx.Theme.define("com.zenesis.qx.upload.theme.Appearance",
+qx.Theme.define("com.zenesis.qx.upload.demo.theme.Font",
 {
-  extend : qx.theme.modern.Appearance,
+  extend : qx.theme.modern.Font,
 
-  appearances :
+  fonts :
   {
   }
 });

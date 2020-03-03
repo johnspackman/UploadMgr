@@ -8,11 +8,11 @@
 
 ************************************************************************ */
 
-qx.Theme.define("com.zenesis.qx.upload.theme.Decoration",
+qx.Theme.define("com.zenesis.qx.upload.demo.theme.Color",
 {
-  extend : qx.theme.modern.Decoration,
+  extend : qx.theme.modern.Color,
 
-  decorations :
+  colors :
   {
   }
 });

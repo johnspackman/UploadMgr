@@ -1,7 +1,7 @@
 qx.Class.define("com.zenesis.qx.upload.InputElement", {
   extend: qx.html.Element,
 
-  construct: function(widget, multiple, name) {
+  construct: function(widget, name) {
     // styling the input[type=file]
     // element is a bit tricky. Some browsers just ignore the normal
     // css style input. Firefox is especially tricky in this regard.
@@ -40,21 +40,33 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
         name: name,
         title: ' '
       };
-    if (qx.Class.hasMixin(widget.constructor, com.zenesis.qx.upload.MUploadButton)) {
-	    var accept = widget.getAcceptUpload();
-	    if (accept)
-	    	attrs.accept = accept;
-    }
     this.base(arguments, 'input', css, attrs);
-    this.__relatedWidget = widget;
-    this.setMultiple(!!multiple);
+    if (qx.Class.hasMixin(widget.constructor, com.zenesis.qx.upload.MUploadButton)) {
+      widget.bind("acceptUpload", this, "acceptUpload");       
+      widget.bind("multiple", this, "multiple");       
+      widget.bind("directory", this, "directory");       
+   }
+   this.__relatedWidget = widget;
   },
 
   properties: {
+  acceptUpload: {
+      init: null,
+      nullable: true,
+      check: "String",
+      apply: "_applyAcceptUpload"
+    },
     multiple: {
       init: false,
       check: "Boolean",
+      nullable: false,
       apply: "_applyMultiple"
+    },
+    directory: {
+      init: false,
+      check: "Boolean",
+      nullable: false,
+      apply: "_applyDirectory"
     }
   },
 
@@ -65,11 +77,24 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
       return this.__relatedWidget;
     },
 
-    _applyMultiple: function(value, oldValue) {
+    _applyAcceptUpload: function(value) {
       if (value)
-        this.setAttribute("multiple", "multiple");
+        this.setAttribute("accept", value, true);
       else
-        this.removeAttribute("multiple");
+        this.removeAttribute("accept", true);
+    },
+    _applyDirectory: function(value) {
+      if (value)
+        this.setAttribute("webkitdirectory", "webkitdirectory", true);
+      else
+        this.removeAttribute("webkitdirectory", true);
+    },
+	
+    _applyMultiple: function(value) {
+      if (value)
+        this.setAttribute("multiple", "multiple", true);
+      else
+        this.removeAttribute("multiple", true);
     }
   }
 });

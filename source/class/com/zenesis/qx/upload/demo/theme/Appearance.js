@@ -8,7 +8,7 @@
 
 ************************************************************************ */
 
-qx.Theme.define("uploadmgr.demo.theme.Appearance",
+qx.Theme.define("com.zenesis.qx.upload.demo.theme.Appearance",
 {
   extend : qx.theme.modern.Appearance,
 

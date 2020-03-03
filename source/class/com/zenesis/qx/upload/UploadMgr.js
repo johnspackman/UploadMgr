@@ -102,7 +102,16 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       init: true,
       nullable: false,
       event: "changeMultiple",
-      apply: "_applyMultiple"
+      apply: "_applyMultiple",
+      event: "changeMultiple" 	  
+    },
+
+    directory: {
+      init: false,
+      check: "Boolean",
+      nullable: false,
+      apply: "_applyDirectory",
+      event: "changeDirectory" 	  
     },
 
     /**
@@ -180,6 +189,11 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
           this._removeInputElement(widget);
         }
       }, this);
+      if (qx.Class.hasMixin(widget.constructor, com.zenesis.qx.upload.MUploadButton)) {
+        this.bind("multiple", widget, "multiple");       
+        this.bind("directory", widget, "directory");       
+     }
+  
     },
 
     /**
@@ -246,6 +260,15 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       }
     },
 
+    // property directory
+    _applyDirectory: function(value, oldValue) {
+      for ( var hash in this.__widgetsData) {
+        var data = this.__widgetsData[hash];
+        if (data.inputElement)
+          data.inputElement.setDirectory(value);
+      }
+    },
+
     // property apply
     _applyRequireMultipartFormData: function(value, oldValue) {
       if (this.__uploadHandler)
@@ -277,9 +300,8 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
       var data = this.__widgetsData[widget.toHashCode()];
       var name = this.getInputNamePrefix() + '-' + (++this.__inputSerial);
       qx.core.Assert.assertNull(data.inputElement);
-      var elem = data.inputElement = new com.zenesis.qx.upload.InputElement(widget, this.getMultiple(), name);
+      var elem = data.inputElement = new com.zenesis.qx.upload.InputElement(widget, name);
       elem.addListenerOnce("change", qx.lang.Function.bind(this._onInputChange, this, elem));
-
       return elem;
     },
 
@@ -335,6 +357,15 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
           this.__uploadHandler = new com.zenesis.qx.upload.FormHandler(this);
       }
       return this.__uploadHandler;
+    },
+
+    /**
+     * Sets the upload handler
+     * 
+     * @param elem {AbstractHandler} The upload handler
+     */
+    setUploadHandler: function(handler) {
+      this.__uploadHandler = handler;
     },
 
     /**

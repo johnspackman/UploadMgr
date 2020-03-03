@@ -25,11 +25,13 @@
  * This is the main application class of your custom application
  * "com.zenesis.qx.upload"
  * 
- * @asset(uploadmgr/demo/*)
  * @asset(com/zenesis/qx/upload/*)
  * @asset(qx/icon/Oxygen/22/actions/*)
+ *
+ * @ignore(saveAs)
+ *
  */
-qx.Class.define("uploadmgr.demo.Application", {
+qx.Class.define("com.zenesis.qx.upload.demo.Application", {
   extend: qx.application.Standalone,
 
   /*
@@ -100,9 +102,9 @@ qx.Class.define("uploadmgr.demo.Application", {
       
       
       var body = new qx.ui.container.Composite(new qx.ui.layout.Canvas());
-      root.add(body, { flex: 1 });
+      root.add(body);
 
-      var btn = new com.zenesis.qx.upload.UploadButton("btn 1 Add File(s)", "uploadmgr/demo/test.png");
+      var btn = new com.zenesis.qx.upload.UploadButton("btn 1 Add File(s)", "com/zenesis/qx/upload/test.png");
       var lst = new qx.ui.form.List();
       var uploadCount = 0;
 
@@ -162,7 +164,6 @@ qx.Class.define("uploadmgr.demo.Application", {
 
           if (state == "uploaded" || state == "cancelled") {
             file.removeListenerById(stateListenerId);
-            file.removeListenerById(progressListenerId);
           }
 
         }, this);
@@ -173,6 +174,18 @@ qx.Class.define("uploadmgr.demo.Application", {
       body.add(btn, {
         left: 50,
         top: 0
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btn, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 50
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btn, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 70
       });
 
       // Create a button to cancel the upload selected in the list
@@ -191,26 +204,23 @@ qx.Class.define("uploadmgr.demo.Application", {
       }, this);
 
       // Auto upload? (default=true)
-      var cbx = new qx.ui.form.CheckBox("Automatically Upload");
+      cbx = new qx.ui.form.CheckBox("Automatically Upload");
       cbx.setValue(true);
-      cbx.addListener("changeValue", function(evt) {
-        uploader.setAutoUpload(evt.getData());
-      }, this);
-
-      // add them to the UI
+      cbx.bind("value", uploader, "autoUpload");
+      body.add(cbx, {
+        left: 200,
+        top: 0
+      });
+ 
       lst.set({
         width: 500
       });
-      body.add(cbx, {
-        left: 170,
-        top: 0
-      });
       body.add(lst, {
-        left: 170,
-        top: 15
+        left: 200,
+        top: 20
       });
       body.add(btnCancel, {
-        left: 690,
+        left: 720,
         top: 0
       });
 
@@ -245,20 +255,20 @@ qx.Class.define("uploadmgr.demo.Application", {
           margin: [ 8, 0 ]
 	      }));
 
-      btn = new com.zenesis.qx.upload.UploadButton("btn 2 Add File(s)", "uploadmgr/demo/test.png");
+      btn = new com.zenesis.qx.upload.UploadButton("btn 2 Add File(s)", "com/zenesis/qx/upload/test.png");
       uploader.addWidget(btn);
       body.add(btn, {
         left: 100,
         top: 345
       });
-      btn = new com.zenesis.qx.upload.UploadButton("Add Image or *.mp4 File(s)", "uploadmgr/demo/test.png");
+      btn = new com.zenesis.qx.upload.UploadButton("Add Image or *.mp4 File(s)", "com/zenesis/qx/upload/test.png");
       btn.set({ acceptUpload: ".png,.mp4"})
       uploader.addWidget(btn);
       body.add(btn, {
         left: 250,
         top: 345
       });
-      var btnDisabled = new com.zenesis.qx.upload.UploadButton("Add File(s)", "uploadmgr/demo/test.png").set({
+      var btnDisabled = new com.zenesis.qx.upload.UploadButton("Add File(s)", "com/zenesis/qx/upload/test.png").set({
         enabled: false
       });
       uploader.addWidget(btnDisabled);
@@ -291,15 +301,15 @@ qx.Class.define("uploadmgr.demo.Application", {
 
       // Menu button
       var menuTop = new qx.ui.toolbar.MenuButton("Menu");
-      var menu = new qx.ui.menu.Menu;
-      var mni = new com.zenesis.qx.upload.UploadMenuButton("Add File(s)", "uploadmgr/demo/test.png");
+      var menu = new qx.ui.menu.Menu();
+      var mni = new com.zenesis.qx.upload.UploadMenuButton("Add File(s)", "com/zenesis/qx/upload/test.png");
 
       menu.add(mni);
       menuTop.setMenu(menu);
       part.add(menuTop);
       uploader.addWidget(mni);
 
-      btn = new com.zenesis.qx.upload.UploadToolbarButton("Add File(s)", "uploadmgr/demo/test.png");
+      btn = new com.zenesis.qx.upload.UploadToolbarButton("Add File(s)", "com/zenesis/qx/upload/test.png");
       uploader.addWidget(btn);
       part.add(btn);
 
@@ -319,9 +329,70 @@ qx.Class.define("uploadmgr.demo.Application", {
       });
       uploader.addWidget(atom);
       
-     var myBlob = new Blob(["This is my blob content"], {type : "text/plain"});      
-     uploader.addBlob("test", myBlob);
+      var myBlob = new Blob(["This is my blob content"], {type : "text/plain"});      
+      uploader.addBlob("test blob", myBlob);
 
+
+      btn = new com.zenesis.qx.upload.UploadButton("btn Add File(s) to zip", "com/zenesis/qx/upload/test.png");
+      body.add(btn, {
+        left: 50,
+        top: 500
+      });
+      var cbx = new qx.ui.form.CheckBox("Multiple");
+      cbx.bind("value", btn, "multiple");
+      body.add(cbx, {
+        left: 50,
+        top: 550
+      });
+      cbx = new qx.ui.form.CheckBox("Directory");
+      cbx.bind("value", btn, "directory");
+      body.add(cbx, {
+        left: 50,
+        top: 570
+      });
+      var btnZip = new qx.ui.form.Button("download zip");
+	  btnZip.addListener("execute", async function(evt) {
+		  var blob = await zipHandler.generateAsync({type:"blob"});
+          saveAs(blob, "test.zip");
+	  }, this);
+      body.add(btnZip, {
+        left: 50,
+        top: 590
+      });
+      var zipUploader = new com.zenesis.qx.upload.UploadMgr(btn);
+	  var zipHandler =  new com.zenesis.qx.upload.ZipHandler(zipUploader);
+	  zipUploader.setUploadHandler(zipHandler);
+      var myBlob = new Blob(["This is my blob content"], {type : "text/plain"});      
+      var zipLst = new qx.ui.form.List();
+      zipUploader.addListener("addFile", function(evt) {
+        var file = evt.getData(), item = new qx.ui.form.ListItem(file.getFilename() + " (queued for upload)", null, file);
+        zipLst.add(item);
+        var stateListenerId = file.addListener("changeState", function(evt) {
+          var state = evt.getData();
+          this.debug(file.getFilename() + ": state=" + state + ", file size=" + file.getSize() + ", progress="
+              + file.getProgress());
+          if (state == "uploading")
+            item.setLabel(file.getFilename() + " (Uploading...)");
+          else if (state == "uploaded")
+            item.setLabel(file.getFilename() + " (Complete)");
+          else if (state == "cancelled")
+            item.setLabel(file.getFilename() + " (Cancelled)");
+          if (state == "uploaded" || state == "cancelled") {
+            file.removeListenerById(stateListenerId);
+          }
+        }, this);
+      }, this);
+      // add them to the UI
+      zipLst.set({
+        width: 500
+      });
+      body.add(zipLst, {
+        left: 200,
+        top: 500
+      });
+      zipUploader.setAutoUpload(true);
+      zipUploader.addBlob("test blob", myBlob);
+	  
     }
   }
 });
