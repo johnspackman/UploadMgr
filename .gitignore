@@ -1,3 +1,4 @@
 .svn/
-/bin 
+/bin
 /compiled
+/node_modules
