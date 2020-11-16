@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/qooxdoo/qooxdoo-compiler/master/resource/schema/v1/compile.json",
+        "$schema": "https://qooxdoo.org/schema/compile-1-0-0.json",
 	"environment": {
 		"qx.icontheme": "Tango",
 		"excludeFromAPIViewer": [
