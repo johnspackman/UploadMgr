@@ -21,8 +21,8 @@
       "FileSaver.js"
     ]
   },
-  "$schema": "https://raw.githubusercontent.com/qooxdoo/qooxdoo-compiler/master/source/resource/qx/tool/schema/Manifest-1-0-0.json",
+  "$schema": "https://raw.githubusercontent.com/qooxdoo/qooxdoo-compiler/master/source/resource/qx/tool/schema/Manifest-2-0-0.json",
   "requires": {
-    "@qooxdoo/framework": "^7.0.0-beta"
+    "@qooxdoo/framework": "^7.0.0"
   }
 }

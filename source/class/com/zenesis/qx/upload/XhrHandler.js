@@ -32,7 +32,7 @@
 /**
  * Implementation of AbstractHandler that uses XMLHttpRequest; this is based on
  * work at http://valums.com/ajax-upload/.
- * 
+ *
  * Call com.zenesis.qx.upload.XhrHandler.isSupported() to check whether this
  * class can be used (otherwise use FormHandler)
  */
@@ -40,27 +40,25 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
   extend: com.zenesis.qx.upload.AbstractHandler,
 
   members: {
-      
     /*
      * @Override
      */
-    addBlob: function (filename, blob, params){
-     var id = "upload-" + this._getUniqueFileId();
-     var file = new com.zenesis.qx.upload.File(blob, filename, id);
-     if (params) {
-      for (var name in params) {
-         var value = params[name];
-         if (value !== null)
-           file.setParam(name, value);
+    addBlob(filename, blob, params) {
+      var id = "upload-" + this._getUniqueFileId();
+      var file = new com.zenesis.qx.upload.File(blob, filename, id);
+      if (params) {
+        for (var name in params) {
+          var value = params[name];
+          if (value !== null) file.setParam(name, value);
+        }
       }
-     }
-     this._addFile(file);
+      this._addFile(file);
     },
-      
+
     /*
      * @Override
      */
-    _createFile: function(input) {
+    _createFile(input) {
       var bomFiles = input.files;
       if (!bomFiles || !bomFiles.length)
         this.debug("No files found to upload via XhrHandler");
@@ -69,9 +67,11 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
       for (var i = 0; i < bomFiles.length; i++) {
         var bomFile = bomFiles[i];
         var id = "upload-" + this._getUniqueFileId();
-        var filename = typeof bomFile.name != "undefined" ? bomFile.name : bomFile.fileName;
+        var filename =
+          typeof bomFile.name != "undefined" ? bomFile.name : bomFile.fileName;
         var file = new com.zenesis.qx.upload.File(bomFile, filename, id);
-        var fileSize = typeof bomFile.size != "undefined" ? bomFile.size : bomFile.fileSize;
+        var fileSize =
+          typeof bomFile.size != "undefined" ? bomFile.size : bomFile.fileSize;
         file.setSize(fileSize);
         files.push(file);
       }
@@ -82,7 +82,7 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
     /*
      * @Override
      */
-    _doUpload: function(file) {
+    _doUpload(file) {
       function sendAsMime(binaryData) {
         body += binaryData + "\r\n";
         body += "--" + boundary + "--";
@@ -90,15 +90,18 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
         xhr.open("POST", action, true);
         setRequestHeader("X-Requested-With", "XMLHttpRequest");
         setRequestHeader("X-File-Name", encodeURIComponent(file.getFilename()));
-        setRequestHeader("Content-Type", "multipart/form-data; boundary=" + boundary);
+        setRequestHeader(
+          "Content-Type",
+          "multipart/form-data; boundary=" + boundary
+        );
         xhr.send(body);
       }
-      
+
       function setRequestHeader(name, value) {
-      	xhr.setRequestHeader(name, value);
-      	headerLength += name.length + 2 + value.length + 1;
+        xhr.setRequestHeader(name, value);
+        headerLength += name.length + 2 + value.length + 1;
       }
-      
+
       /*
        * The upload progress includes the size of the headers, but we cannot ask XMLHttpRequest what the
        * headers were so we count the headers we set and also add these below.  This is never going to be
@@ -106,22 +109,24 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
        */
       var headerLength = 0;
       var DEFAULT_HEADERS = {
-      		"Accept": "*/*",
-      		"Accept-Encoding": "gzip, deflate",
-      		"Accept-Language": "en,en-US;q=0.8",
-      		"Cache-Control": "no-cache",
-      		"Connection": "keep-alive",
-      		"Content-Length": "" + file.getSize(),
-      		"Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryTfptZDRmE8C3dZmW",
-      		"Host": document.location.host,
-      		"Pragma": "no-cache",
-      		"Referer": document.location.href,
-      		"User-Agent": navigator.userAgent
+        Accept: "*/*",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en,en-US;q=0.8",
+        "Cache-Control": "no-cache",
+        Connection: "keep-alive",
+        "Content-Length": "" + file.getSize(),
+        "Content-Type":
+          "multipart/form-data; boundary=----WebKitFormBoundaryTfptZDRmE8C3dZmW",
+        Host: document.location.host,
+        Pragma: "no-cache",
+        Referer: document.location.href,
+        "User-Agent": navigator.userAgent,
       };
+
       if (document.location.origin)
         DEFAULT_HEADERS.Origin = document.location.origin;
       for (var key in DEFAULT_HEADERS)
-      	headerLength += DEFAULT_HEADERS[key].length + 1; 
+        headerLength += DEFAULT_HEADERS[key].length + 1;
 
       var xhr = new XMLHttpRequest();
       if (com.zenesis.qx.upload.XhrHandler.isWithCredentials())
@@ -131,15 +136,24 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
 
       file.setUserData("com.zenesis.qx.upload.XhrHandler", xhr);
 
-      xhr.upload.onprogress = function(e) {
-        self.debug("onprogress: lengthComputable=" + e.lengthComputable + ", total=" + e.total + ", loaded=" + e.loaded + ", headerLength=" + headerLength);
+      xhr.upload.onprogress = function (e) {
+        self.debug(
+          "onprogress: lengthComputable=" +
+            e.lengthComputable +
+            ", total=" +
+            e.total +
+            ", loaded=" +
+            e.loaded +
+            ", headerLength=" +
+            headerLength
+        );
         if (e.lengthComputable) {
           file.setSize(e.total - headerLength);
           file.setProgress(e.loaded - headerLength);
         }
       };
 
-      xhr.onreadystatechange = function() {
+      xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {
           var response = xhr.responseText;
           // self.debug("xhr server status=" + xhr.status + ", responseText=" +
@@ -164,25 +178,33 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
         setRequestHeader("X-Requested-With", "XMLHttpRequest");
         setRequestHeader("X-File-Name", encodeURIComponent(file.getFilename()));
         xhr.send(fd);
-
       } else {
         var browserFile = file.getBrowserObject();
-        var boundary = "--------FormData" + Math.random(), body = "", action = this._getUploader().getUploadUrl(), params = this
-            ._getMergedParams(file);
-        for ( var name in params) {
+        var boundary = "--------FormData" + Math.random(),
+          body = "",
+          action = this._getUploader().getUploadUrl(),
+          params = this._getMergedParams(file);
+        for (var name in params) {
           body += "--" + boundary + "\r\n";
-          body += "Content-Disposition: form-data; name=\"" + name + "\";\r\n\r\n";
+          body +=
+            'Content-Disposition: form-data; name="' + name + '";\r\n\r\n';
           body += params[name] + "\r\n";
         }
         body += "--" + boundary + "\r\n";
-        body += "Content-Disposition: form-data; name=\"file\"; filename=\"" + file.getFilename() + "\"\r\n";
-        body += "Content-Type: " + (browserFile.type || "application/octet-stream") + "\r\n\r\n";
+        body +=
+          'Content-Disposition: form-data; name="file"; filename="' +
+          file.getFilename() +
+          '"\r\n';
+        body +=
+          "Content-Type: " +
+          (browserFile.type || "application/octet-stream") +
+          "\r\n\r\n";
 
         if (typeof browserFile.getAsBinary == "function") {
           sendAsMime(browserFile.getAsBinary());
         } else {
           var reader = new FileReader();
-          reader.onload = function(evt) {
+          reader.onload = function (evt) {
             sendAsMime(evt.target.result);
           };
           reader.readAsBinaryString(browserFile);
@@ -193,13 +215,13 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
     /*
      * @Override
      */
-    _doCancel: function(file) {
+    _doCancel(file) {
       var xhr = file.getUserData("com.zenesis.qx.upload.XhrHandler");
       if (xhr) {
         xhr.abort();
         file.setUserData("com.zenesis.qx.upload.XhrHandler", null);
       }
-    }
+    },
   },
 
   statics: {
@@ -207,14 +229,17 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
 
     /**
      * Detects whether this handler is support on the current browser
-     * 
+     *
      * @returns {Boolean}
      */
-    isSupported: function(requireMultipartFormData) {
-      var input = document.createElement('input');
-      input.type = 'file';
+    isSupported(requireMultipartFormData) {
+      var input = document.createElement("input");
+      input.type = "file";
 
-      var isSupported = 'multiple' in input && typeof File != "undefined" && typeof (new XMLHttpRequest()).upload != "undefined";
+      var isSupported =
+        "multiple" in input &&
+        typeof File != "undefined" &&
+        typeof new XMLHttpRequest().upload != "undefined";
 
       return isSupported;
     },
@@ -223,7 +248,7 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
      * Whether to set XMLHttpRequest.withCredentials (used for CORS uploads wth
      * cookies)
      */
-    setWithCredentials: function(value) {
+    setWithCredentials(value) {
       this.__withCredentials = true;
     },
 
@@ -231,8 +256,8 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
      * Whether to set XMLHttpRequest.withCredentials (used for CORS uploads wth
      * cookies)
      */
-    isWithCredentials: function() {
+    isWithCredentials() {
       return this.__withCredentials;
-    }
-  }
+    },
+  },
 });
