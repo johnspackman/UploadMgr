@@ -1,7 +1,7 @@
 qx.Class.define("com.zenesis.qx.upload.InputElement", {
   extend: qx.html.Element,
 
-  construct: function(widget, name) {
+  construct(widget, name) {
     // styling the input[type=file]
     // element is a bit tricky. Some browsers just ignore the normal
     // css style input. Firefox is especially tricky in this regard.
@@ -19,82 +19,88 @@ qx.Class.define("com.zenesis.qx.upload.InputElement", {
       zIndex: widget.getZIndex() + 11,
       opacity: 0,
       // align to the top right hand corner
-      top: '0px',
-      right: '0px',
+      top: "0px",
+      right: "0px",
       // ff ignores the width setting pick a realy large font size to get
       // a huge button that covers the area of the upload button
-      fontFamily: 'Arial',
+      fontFamily: "Arial",
       // from valums.com/ajax-upload: 4 persons reported this, the max values
       // that worked for them were 243, 236, 236, 118
-      fontSize: '118px'
+      fontSize: "118px",
     };
-    if ((qx.core.Environment && qx.core.Environment.get('browser.name') == 'ie' && qx.core.Environment.get('browser.version') < 9)
-        || (!qx.core.Environment && qx.bom.client.Engine.MSHTML && qx.bom.client.Engine.VERSION < 9.0)) {
-      css.filter = 'alpha(opacity=0)';
-      css.width = '200%';
-      css.height = '100%';
+
+    if (
+      (qx.core.Environment &&
+        qx.core.Environment.get("browser.name") == "ie" &&
+        qx.core.Environment.get("browser.version") < 9) ||
+      (!qx.core.Environment &&
+        qx.bom.client.Engine.MSHTML &&
+        qx.bom.client.Engine.VERSION < 9.0)
+    ) {
+      css.filter = "alpha(opacity=0)";
+      css.width = "200%";
+      css.height = "100%";
     }
 
     var attrs = {
-        type: 'file',
-        name: name,
-        title: ' '
-      };
-    this.base(arguments, 'input', css, attrs);
-    if (qx.Class.hasMixin(widget.constructor, com.zenesis.qx.upload.MUploadButton)) {
-      widget.bind("acceptUpload", this, "acceptUpload");       
-      widget.bind("multiple", this, "multiple");       
-      widget.bind("directory", this, "directory");       
-   }
-   this.__relatedWidget = widget;
+      type: "file",
+      name: name,
+      title: " ",
+    };
+
+    super("input", css, attrs);
+    if (
+      qx.Class.hasMixin(widget.constructor, com.zenesis.qx.upload.MUploadButton)
+    ) {
+      widget.bind("acceptUpload", this, "acceptUpload");
+      widget.bind("multiple", this, "multiple");
+      widget.bind("directory", this, "directory");
+    }
+    this.__relatedWidget = widget;
   },
 
   properties: {
-  acceptUpload: {
+    acceptUpload: {
       init: null,
       nullable: true,
       check: "String",
-      apply: "_applyAcceptUpload"
+      apply: "_applyAcceptUpload",
     },
+
     multiple: {
       init: false,
       check: "Boolean",
       nullable: false,
-      apply: "_applyMultiple"
+      apply: "_applyMultiple",
     },
+
     directory: {
       init: false,
       check: "Boolean",
       nullable: false,
-      apply: "_applyDirectory"
-    }
+      apply: "_applyDirectory",
+    },
   },
 
   members: {
     __relatedWidget: null,
 
-    getWidget: function() {
+    getWidget() {
       return this.__relatedWidget;
     },
 
-    _applyAcceptUpload: function(value) {
-      if (value)
-        this.setAttribute("accept", value, true);
-      else
-        this.removeAttribute("accept", true);
+    _applyAcceptUpload(value) {
+      if (value) this.setAttribute("accept", value, true);
+      else this.removeAttribute("accept", true);
     },
-    _applyDirectory: function(value) {
-      if (value)
-        this.setAttribute("webkitdirectory", "webkitdirectory", true);
-      else
-        this.removeAttribute("webkitdirectory", true);
+    _applyDirectory(value) {
+      if (value) this.setAttribute("webkitdirectory", "webkitdirectory", true);
+      else this.removeAttribute("webkitdirectory", true);
     },
-	
-    _applyMultiple: function(value) {
-      if (value)
-        this.setAttribute("multiple", "multiple", true);
-      else
-        this.removeAttribute("multiple", true);
-    }
-  }
+
+    _applyMultiple(value) {
+      if (value) this.setAttribute("multiple", "multiple", true);
+      else this.removeAttribute("multiple", true);
+    },
+  },
 });

@@ -31,42 +31,38 @@ qx.Mixin.define("com.zenesis.qx.upload.MParameters", {
 
     /**
      * Sets a parameter value to be sent with the file
-     * 
+     *
      * @param name
      *          {String} name of the parameter
      * @param value
      *          {String} the value of the parameter, or null to delete a
      *          previous parameter
      */
-    setParam: function(name, value) {
-      if (value !== null && typeof value != "string")
-        value = "" + value;
-      if (!this.__params)
-        this.__params = {};
+    setParam(name, value) {
+      if (value !== null && typeof value != "string") value = "" + value;
+      if (!this.__params) this.__params = {};
       this.__params[name] = value;
     },
 
     /**
      * Returns a parameter value to be sent with the file
-     * 
+     *
      * @param name {String} Name of the parameter
      * @returns {Boolean}
      */
-    getParam: function(name) {
+    getParam(name) {
       return this.__params && this.__params[name];
     },
 
     /**
      * Returns a list of parameter names
-     * 
+     *
      * @returns {Array}
      */
-    getParamNames: function() {
+    getParamNames() {
       var result = [];
-      if (this.__params)
-        for ( var name in this.__params)
-          result.push(name);
+      if (this.__params) for (var name in this.__params) result.push(name);
       return result;
-    }
-  }
+    },
+  },
 });

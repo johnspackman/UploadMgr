@@ -26,9 +26,7 @@
  */
 qx.Class.define("com.zenesis.qx.upload.UploadButton", {
   extend: qx.ui.form.Button,
-  include: [ com.zenesis.qx.upload.MUploadButton ],
+  include: [com.zenesis.qx.upload.MUploadButton],
 
-  members: {
-
-  }
+  members: {},
 });
