@@ -6,7 +6,7 @@
     "homepage": "http://www.zenesis.com/",
     "license": "LGPL and EPL (see http://qooxdoo.org)",
     "authors": [],
-    "version": "1.0.5"
+    "version": "2.0.0"
   },
   "provides": {
     "namespace": "com.zenesis.qx.upload",
