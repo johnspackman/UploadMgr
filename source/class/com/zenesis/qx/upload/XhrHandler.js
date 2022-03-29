@@ -170,14 +170,20 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
         }
       };
 
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4) {
-          var response = xhr.responseText;
-          // self.debug("xhr server status=" + xhr.status + ", responseText=" +
-          // response);
+      const onFileUploaded = () => {
+        if (file.getState() == "uploading") {
           file.setUserData("com.zenesis.qx.upload.XhrHandler", null);
           file.setStatus(xhr.status);
-          self._onCompleted(file, response);
+          self._onCompleted(file, xhr.responseText);
+        }
+      };
+
+      xhr.upload.onload = onFileUploaded;
+
+      xhr.onreadystatechange = function () {
+        console.log("upload xhr: readyState=" + xhr.readyState);
+        if (xhr.readyState == 4) {
+          onFileUploaded();
         }
       };
 
