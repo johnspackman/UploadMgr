@@ -178,7 +178,7 @@ qx.Class.define("com.zenesis.qx.upload.XhrHandler", {
         }
       };
 
-      xhr.upload.onload = onFileUploaded;
+      //xhr.upload.onload = onFileUploaded;
 
       xhr.onreadystatechange = function () {
         console.log("upload xhr: readyState=" + xhr.readyState);
