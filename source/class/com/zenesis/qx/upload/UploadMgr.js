@@ -264,7 +264,9 @@ qx.Class.define("com.zenesis.qx.upload.UploadMgr", {
 
     // property apply
     _applyAutoUpload(value, oldValue) {
-      this.getUploadHandler().beginUploads();
+      if (value && this.__uploadHandler) {
+        this.__uploadHandler.beginUploads();
+      }
     },
 
     // property apply
